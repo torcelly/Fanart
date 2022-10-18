@@ -22,11 +22,7 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "Fanart",
-            dependencies: ["Fanart"],
-            resources: [
-                .process("Resources")
-            ]
+            name: "Fanart"
         ),
         .testTarget(
             name: "FanartTests",
