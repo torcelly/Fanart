@@ -15,29 +15,29 @@ public struct TVShow: Decodable, Equatable, Hashable {
     /// TVDB identifier.
     public let tvdbId: String
     /// TVShow clear logo paths.
-    public let clearLogo: [Image]
+    public let clearLogo: [Image]?
     /// TVShow hd tv logo paths.
-    public let hdTVLogo: [Image]
+    public let hdTVLogo: [Image]?
     /// TVShow clear art paths.
-    public let clearArt: [Image]
+    public let clearArt: [Image]?
     /// TVShow background paths.
-    public let showBackground: [Image]
+    public let showBackground: [Image]?
     /// TVShow thumbnail paths.
-    public let tvThumb: [Image]
+    public let tvThumb: [Image]?
     /// Season poster paths.
-    public let seasonPoster: [Image]
+    public let seasonPoster: [Image]?
     /// Season thumbnail paths.
-    public let seasonThumb: [Image]
+    public let seasonThumb: [Image]?
     /// HD clear art paths.
-    public let hdClearArt: [Image]
+    public let hdClearArt: [Image]?
     /// TV banner paths.
-    public let tvBanner: [Image]
+    public let tvBanner: [Image]?
     /// Character art paths.
-    public let characterArt: [Image]
+    public let characterArt: [Image]?
     /// TV poster paths.
-    public let tvPoster: [Image]
+    public let tvPoster: [Image]?
     /// Season banner paths.
-    public let seasonBanner: [Image]
+    public let seasonBanner: [Image]?
 
 }
 

@@ -17,23 +17,23 @@ public struct Movie: Decodable, Equatable, Hashable {
     /// IMDB identifier.
     public let imdbId: String
     /// Movie logo paths.
-    public let movieLogo: [Image]
+    public let movieLogo: [Image]?
     /// HD movie logo paths.
-    public let hdMovieLogo: [Image]
+    public let hdMovieLogo: [Image]?
     /// Movie disc paths.
-    public let movieDisc: [Image]
+    public let movieDisc: [Image]?
     /// Movie poster paths.
-    public let moviePoster: [Image]
+    public let moviePoster: [Image]?
     /// HD Movie clear art paths.
-    public let hdMovieClearArt: [Image]
+    public let hdMovieClearArt: [Image]?
     /// Movie clear art paths.
-    public let movieArt: [Image]
+    public let movieArt: [Image]?
     /// Movie background paths.
-    public let movieBackground: [Image]
+    public let movieBackground: [Image]?
     /// Movie banner paths.
-    public let movieBanner: [Image]
+    public let movieBanner: [Image]?
     /// Movie thumbnail paths.
-    public let movieThumb: [Image]
+    public let movieThumb: [Image]?
 
 }
 
