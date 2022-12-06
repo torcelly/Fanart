@@ -6,7 +6,7 @@
 //
 
 import Foundation
-@testable import TMDb
+@testable import Fanart
 
 final class FanartTVURLProtocol: URLProtocol {
 

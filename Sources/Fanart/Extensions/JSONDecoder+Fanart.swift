@@ -11,7 +11,6 @@ extension JSONDecoder {
 
     static var fanart: JSONDecoder {
         let decoder = JSONDecoder()
-        decoder.keyDecodingStrategy = .convertFromSnakeCase
         decoder.dateDecodingStrategy = .formatted(.fanart)
         return decoder
     }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-@testable import TMDb
+@testable import Fanart
 import XCTest
 
 final class MovieTests: XCTestCase {
@@ -28,17 +28,17 @@ final class MovieTests: XCTestCase {
     func testMoviesIMDB() async throws {
         FanartTVURLProtocol.add("movies-images", for: MoviesEndpoint.movieIMDB(imdb:"tt0109830"))
 
-        let movie = try await fanart.movies.movie(imdb: "13")
-
-        XCTAssertTrue(!movieList.results.isEmpty)
+        let movie = try await fanart.movies.movie(imdb: "tt0109830")
+        
+        XCTAssertTrue(movie.imdbId == "tt0109830")
     }
 
     func testMoviesTMDB() async throws {
-        FanartTVURLProtocol.add("movies-images", for: MoviesEndpoint.movieTMDB(tmdb:"13"))
+        FanartTVURLProtocol.add("movies-images", for: MoviesEndpoint.movieTMDB(tmdb: 13))
 
-        let movie = try await fanart.movies.movie(tmdb: "13")
+        let movie = try await fanart.movies.movie(tmdb: 13)
 
-        XCTAssertTrue(!tvShowList.results.isEmpty)
+        XCTAssertTrue(movie.tmdbId == "13")
     }
 
 }

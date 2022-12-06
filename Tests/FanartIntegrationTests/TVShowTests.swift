@@ -7,7 +7,7 @@
 
 import Foundation
 
-@testable import TMDb
+@testable import Fanart
 import XCTest
 
 final class TVShowTests: XCTestCase {
@@ -30,7 +30,7 @@ final class TVShowTests: XCTestCase {
 
         let tvShow = try await fanart.tvshows.tv(tvdb: 75682)
 
-        XCTAssertTrue(!movieList.results.isEmpty)
+        XCTAssertTrue(tvShow != nil)
     }
 
 }

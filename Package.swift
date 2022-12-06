@@ -31,5 +31,12 @@ let package = Package(
                 .process("Resources")
             ]
         ),
+        .testTarget(
+            name: "FanartIntegrationTests",
+            dependencies: ["Fanart"],
+            resources: [
+                .process("Resources")
+            ]
+        ),
     ]
 )
